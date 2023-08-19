@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "navbar">
+        <a href="#" class="split">library System</a> 
+        <a href="#">Logout</a>
+        <a href="#">Contact Us</a>
+        <a href ="#register">Register</a>
+        <a href ="#book">Books</a>
+        
+        
+
+    </div>
+    <div id = "book">
+        <table>
+            <h1>Books</h1>
+            <thead>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genere</th>
+                <th>Availability</th>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td><h4>But You Have Friends</h4>
+                    <table>
+                        <tr>
+                            <td>Publication Date:August 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:120</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:978-1-60309-527-3 </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Emilia McKenzie</td>
+                <td>Comics</td>
+                <td>Available</td>
+            </tr>
+            <tr class="e">
+                <td>2</td>
+                <td><h4>Two Years Eight Months and Twenty-Eight Nights </h4>
+                    <table>
+                        <tr>
+                            <td>Publication Date: September 2015</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:304</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:9781473523289</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Salman Rushdie</td>
+                <td>Fantasy Fiction</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><h4>The Red Sari</h4>
+                    <table>
+                        <tr>
+                            <td>Publication Date:October 2008</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:429</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:9789351941033</td>
+                        </tr>
+                    </table>
+                </td>
+                <td> Javier Moro </td>
+                <td> Biographical Fiction</td>
+                <td>Not Available</td>
+            </tr>
+            <tr class="e">
+                <td>4</td>
+                <td><h4>My Favourite Nature Stories</h4>
+                    <table>
+                        <tr>
+                            <td>Publication Date:May 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:148</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:9788129137685</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Ruskin Bond</td>
+                <td>Natural history</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><h4>The Girl In Room 105</h4>
+                    <table>
+                        <tr>
+                            <td>Publication Date:July 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:356</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:9789356291089</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Chetan Bhagat</td>
+                <td>Mystery</td>
+                <td>Available</td>
+            </tr>
+            <tr class="e">
+                <td>6</td>
+                <td><h4>Anti-Clock</h4>
+                    <table>
+                        <tr>
+                            <td>Publication Date:June 2021
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:288</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:9789354920318</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>VJ James</td>
+                <td>Science fiction</td>
+                <td>Not Available</td>
+            </tr>
+        </table>
+    </div>
+    <div id = "register">
+        <form id="registeration" method ="post" action="#">
+            <caption><h1>Register</h1></caption>
+            <hr>
+            <label for = "fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for = "lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for = "dob">Date Of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for = "age">Age:</label><br>
+            <input type="number" id="age" name="age" min="5" max="100" required><br>
+            <label for = "email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for = "psd">Password:</label><br>
+            <input type="password" id="psd" name="psd" required><br>
+            <label for = "conpsd">Confirm Password:</label><br>
+            <input type="password" id="conpsd" name="conpsd" required><br>
+            <p id ="message"></p>
+            <hr>
+            <input type="submit" value="Register" onclick="checkpassword" id ="submitreg">
+
+
+        </form>
+    </div>
+   <script src ="script.js"></script>
+</body>
+</html>
